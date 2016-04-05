@@ -106,25 +106,31 @@ public class GameCanvas extends JPanel implements ActionListener{
 			
 			x_pos += x_vel;
 			
-			
+			//Draws the first grass boundary and colors it green.
 			g.setColor(Color.GREEN);
 			g.fillRect(grassbound1.topLeft.x, grassbound1.topLeft.y, grassbound1.getWidth(), grassbound1.getHeight());
 			
+			//Draws the path of the trustee and colors it orange.
 			g.setColor(Color.ORANGE);
 			g.fillRect(trusteebound1.topLeft.x, trusteebound1.topLeft.y, trusteebound1.getWidth(), trusteebound1.getHeight());
 			
+			//Draws the second grass boundary and colors it green. 
 			g.setColor(Color.GREEN);
 			g.fillRect(grassbound2.topLeft.x, grassbound2.topLeft.y, grassbound2.getWidth(), grassbound2.getHeight());
 			
+			//Draws the boundary for the second trustee path and color it orange.
 			g.setColor(Color.ORANGE);
 			g.fillRect(trusteebound2.topLeft.x, trusteebound2.topLeft.y, trusteebound2.getWidth(), trusteebound2.getHeight());
 			
+			//Draws the boundary for the scoreboard and colors it blue. 
 			g.setColor(Color.BLUE);
 			g.fillRect(scoreboard_line.topLeft.x, scoreboard_line.topLeft.y, scoreboard_line.getWidth(), scoreboard_line.getHeight());
 			
+			//Draws the third grass boundary and colors it green.
 			g.setColor(Color.GREEN);
 			g.fillRect(grass_bound3.topLeft.x, grass_bound3.topLeft.y, grass_bound3.getWidth(), grass_bound3.getHeight());
 			
+			//Draws the second trustee boundary and colors it yellow. 
 			g.setColor(Color.YELLOW);
 			g.fillRect(Trustee_2.topLeft.x, Trustee_2.topLeft.y, Trustee_2.getWidth(), Trustee_2.getHeight());
 			
