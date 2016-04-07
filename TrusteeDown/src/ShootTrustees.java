@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.awt.Cursor;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -18,6 +19,10 @@ public class ShootTrustees {
 	    	BufferedImage Background = null;
 	    	BufferedImage Running_left = null;
 	    	
+	        frame.setCursor(Cursor.getPredefinedCursor(Cursor.CROSSHAIR_CURSOR ));
+	        /** using a predefined cursor for now, will switch to 
+	         * a graphic later using appropriate function.RV
+	         * */
 
 	        frame.add(gameCanvas, BorderLayout.CENTER);
 	        frame.setSize(1024,768);
